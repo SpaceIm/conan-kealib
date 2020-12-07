@@ -5,7 +5,7 @@ from conans.errors import ConanInvalidConfiguration
 
 class KealibConan(ConanFile):
     name = "kealib"
-    description = "Provides complete access to the KEA image format."
+    description = "C++ library providing complete access to the KEA image format."
     license = "MIT"
     topics = ("conan", "kealib", "image", "raster")
     homepage = "https://github.com/ubarsc/kealib"
