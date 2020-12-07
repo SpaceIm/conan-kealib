@@ -41,7 +41,7 @@ class KealibConan(ConanFile):
 
     def _validate_dependency_graph(self):
         if not (self.options["hdf5"].enable_cxx and self.options["hdf5"].hl):
-            raise ConanInvalidConfiguration("kealib requires hdf5 cxx and hl.")
+            raise ConanInvalidConfiguration("kealib requires hdf5 with cxx and hl enabled.")
 
     def source(self):
         tools.get(**self.conan_data["sources"][self.version])
